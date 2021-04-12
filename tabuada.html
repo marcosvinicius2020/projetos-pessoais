@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <title>JavaScript - Trabalhando com Eventos</title>
+        <link rel="stylesheet" href="data:image/png;base64,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">
+        <meta charset="utf-8">
+        <link href="tabuadaopcional.css"  rel="stylesheet">
+    </head>
+
+    <body id="corpo">
+        <br>
+        <br>
+        <form id="box">
+
+            <div id="DivCidade">
+                <font color="white" face="arial"><h1>Tabuada</h1></font><br>
+                <select id="iNumero" name="nNumero">
+                   <option value="">Escolha um numero:</option>
+                   <option value="1">1</option>
+                   <option value="2">2</option>
+                   <option value="3">3</option>
+                   <option value="4">4</option>
+                   <option value="5">5</option>
+                   <option value="6">6</option>
+                   <option value="7">7</option>
+                   <option value="8">8</option>
+                   <option value="9">9</option>
+                   <option value="10">10</option>
+                </select>
+                <input type="button" value="calcular" onclick="Calcular()">
+            </div>
+            <br>
+
+            <div>
+                <input type="button" id="limpar" value="Limpar">
+            </div>
+
+            <div class="padrao">
+                <input type="checkbox" id="iA">
+                <font color="white" face="arial"><label><b>Mostrar a tabela anterior</b></label></font>
+            </div>
+            <div id="Posterio">
+                <input type="checkbox" id="iP">
+                <font color="white" face="arial"><label><b>Mostrar a tabela Posterior</b></label></font>
+            </div>
+
+            <div id="Tela1">
+                <table style="color: aliceblue; left: 61px; position: relative; top: 40px;">
+                    <tbody><tr><td><label id="ta1"></label></td></tr>
+                        <tr><td><label id="ta2"></label></td></tr>
+                        <tr><td><label id="ta3"></label></td></tr>
+                        <tr><td><label id="ta4"></label></td></tr>
+                        <tr><td><label id="ta5"></label></td></tr>
+                        <tr><td><label id="ta6"></label></td></tr>
+                        <tr><td><label id="ta7"></label></td></tr>
+                        <tr><td><label id="ta8"></label></td></tr>
+                        <tr><td><label id="ta9"></label></td></tr>
+                        <tr><td><label id="ta10"></label></td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="Tela2">
+                <table style="color: aliceblue; left: 61px; position: relative; top: 40px;">
+                    <tbody><tr><td><label id="tb1"></label></td></tr>
+                        <tr><td><label id="tb2"></label></td></tr>
+                        <tr><td><label id="tb3"></label></td></tr>
+                        <tr><td><label id="tb4"></label></td></tr>
+                        <tr><td><label id="tb5"></label></td></tr>
+                        <tr><td><label id="tb6"></label></td></tr>
+                        <tr><td><label id="tb7"></label></td></tr>
+                        <tr><td><label id="tb8"></label></td></tr>
+                        <tr><td><label id="tb9"></label></td></tr>
+                        <tr><td><label id="tb10"></label></td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="Tela3">
+                <table style="color: aliceblue; left: 61px; position: relative; top: 40px;">
+                    <tbody><tr><td><label id="tc1"></label></td></tr>
+                        <tr><td><label id="tc2"></label></td></tr>
+                        <tr><td><label id="tc3"></label></td></tr>
+                        <tr><td><label id="tc4"></label></td></tr>
+                        <tr><td><label id="tc5"></label></td></tr>
+                        <tr><td><label id="tc6"></label></td></tr>
+                        <tr><td><label id="tc7"></label></td></tr>
+                        <tr><td><label id="tc8"></label></td></tr>
+                        <tr><td><label id="tc9"></label></td></tr>
+                        <tr><td><label id="tc10"></label></td></tr>
+                    </tbody>
+                </table>
+            </div>
+            
+         <script>
+            
+            var listaI = document.getElementById("Tela1").getElementsByTagName("tbody")[0]
+            var listaII = document.getElementById("Tela2").getElementsByTagName("tbody")[0]
+            var listaIII = document.getElementById("Tela3").getElementsByTagName("tbody")[0]
+            var AtivoAnterior = document.getElementById("iA");
+            var AtivoPosterior = document.getElementById("iP");
+            var Limpar = document.getElementById("limpar");
+            var Anterior = false;
+            var Posterior = false;
+                   
+            AtivoAnterior.onclick = function(){
+			 	
+                 Anterior = true;
+
+            }
+         
+         
+            AtivoPosterior.onclick = function(){
+  
+                 Posterior = true;
+
+            }
+
+            Limpar.onclick = function(){
+                
+                listaI.innerHTML = "";
+                listaII.innerHTML = "";
+                listaIII.innerHTML = "";
+
+            }
+
+            function Calcular() {
+                
+                var valor = document.getElementById("iNumero").value;
+
+                    if (valor == "Escolha o numero...") return;
+                    valor = parseInt(valor)
+
+                      if(Anterior){
+                        var Ivalor = valor - 1;
+                        listaI.innerHTML = ''
+                        for (let i = 1; i <= 10; i++) {
+                            console.log(i*Ivalor)
+                            listaI.innerHTML += "<tr><td><label >"+i*Ivalor+"</label></td></tr>"
+                        }
+                      }          
+
+                    if(listaII){
+
+                        var IIvalor = valor;
+                        listaII.innerHTML = ''
+                        for (let i = 1; i <= 10; i++) {
+                            console.log(i*IIvalor)
+                            listaII.innerHTML += "<tr><td><label >"+i*IIvalor+"</label></td></tr>"
+                        }
+                    }       
+                    
+                      if(Posterior){
+                        var IIIvalor = valor + 1;
+                        listaIII.innerHTML = ''
+                        for (let i = 1; i <= 10; i++) {
+                            console.log(i*IIIvalor)
+                            listaIII.innerHTML += "<tr><td><label >"+i*IIIvalor+"</label></td></tr>"
+                        }
+                      }     
+    
+            }
+            
+         </script>
+
+        </form>
+
+    </body>
+
+</html>

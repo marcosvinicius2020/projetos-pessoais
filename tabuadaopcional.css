@@ -1,0 +1,233 @@
+#corpo{
+    height: 790px;
+    background: linear-gradient(45deg, #1e212d, #b68973, #eabf9f, #faf3e0);
+    animation: colors; 
+    animation-duration:15s ease infinite;
+ }
+ 
+ @keyframes colors {
+    0%{
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+ }
+
+ #box{
+    box-shadow: #555 6px 6px 2em;
+     background-color: rgb(75, 168, 72);
+     width: 650px;
+     height: 670px;
+     margin-left: auto;
+     margin-right: auto;
+     border-radius: 50px; 
+     padding: 10px 10px;
+     text-align: center;
+     font-size: 16px;
+     animation-name:fade;
+     animation-duration: 3s;
+
+ }
+
+ @keyframes fade {
+     from{
+         opacity: 0;
+         transform: scale(0.9);
+     }
+     to {
+         opacity: 2;
+         transform: scale(1);
+     }
+ }
+
+ #box input{
+     
+     border:1px solid rgb(0, 0, 0);
+     border-radius: 5px;
+     padding: 4px;
+
+ }
+
+ #Posterio{
+
+     position: relative;
+     left: -199.1px;
+     animation-name:move;
+     animation-duration: 3s;
+     overflow: hidden;
+     animation-delay: 1500ms;
+     animation-fill-mode: backwards;
+
+ }
+
+ @keyframes move {
+    from{
+        opacity: 0;
+        transform: translateX(-35%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+
+ #limpar{
+
+    padding: 10px;
+    position: relative;
+    border: none;
+    background:rgb(34, 109, 99);
+    left: 0px;
+    width: 80px;
+    top: 499px;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+
+}
+
+#limpar:hover{
+
+    background-color:rgb(255, 1, 1);
+    color: rgb(0, 0, 0);
+}
+
+.padrao{
+
+     text-align: left;
+     margin: 10px;
+     margin-left: 10px;   
+     animation-name:move;
+     animation-duration: 3s;
+     overflow: hidden;
+     animation-delay: 250ms;
+
+ }
+
+ @keyframes move {
+    from{
+        opacity: 0;
+        transform: translateX(-35%);
+    }
+    to {
+        opacity: 2;
+        transform: translateX(0%);
+    }
+}
+
+ .botao button{
+
+    border-radius: 7px;
+    border:1px solid rgb(7, 7, 7);
+    color: rgb(255, 7, 7);
+    top: 400px;
+    position: relative;
+    background-color:rgb(47, 95, 95);
+    padding: 6px;
+    margin-left: 15px;
+
+ }
+
+ .botao button:hover{
+
+    background:  rgb(25, 79, 71);
+    cursor:pointer;
+
+ }
+
+ .Config{
+
+    left:-130px;
+    position: relative;
+
+ }
+
+ #Tela1{
+
+    border-radius: 7px;
+    border-style: solid;
+    border-color: aliceblue;
+    position: relative;
+    height: 300px;
+    width: 150px;
+    left: 50px;
+    top: 90px;
+    animation-name:move;
+    animation-duration: 3s;
+    overflow: hidden;
+    animation-delay: 1860ms;
+    animation-fill-mode: backwards;
+
+}
+
+@keyframes move {
+   from{
+       opacity: 0;
+       transform: translateX(-35%);
+   }
+   to {
+       opacity: 2;
+       transform: translateX(0%);
+   }
+}
+
+#Tela2{
+
+    border-radius: 7px;
+    border-style: solid;
+    border-color: aliceblue;
+    position: relative;
+    height: 300px;
+    width: 150px;
+    left: 250px;
+    top: -215px;
+    animation-name:move;
+    animation-duration: 3s;
+    overflow: hidden;
+    animation-delay: 1500ms;
+    animation-fill-mode: backwards;
+
+}
+
+@keyframes move {
+   from{
+       opacity: 0;
+       transform: translateX(-35%);
+   }
+   to {
+       opacity: 2;
+       transform: translateX(0%);
+   }
+}
+
+#Tela3{
+
+    border-radius: 7px;
+    border-style: solid;
+    border-color: aliceblue;
+    position: relative;
+    height: 300px;
+    width: 150px;
+    left: 440px;
+    top: -520px;
+    animation-name:move;
+    animation-duration: 3s;
+    overflow: hidden;
+    animation-delay: 750ms;
+    animation-fill-mode: backwards;
+
+}
+
+@keyframes move {
+   from{
+       opacity: 0;
+       transform: translateX(-35%);
+   }
+   to {
+       opacity: 2;
+       transform: translateX(0%);
+   }
+}
